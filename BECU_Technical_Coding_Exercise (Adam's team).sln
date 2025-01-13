@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BECU_Technical_Coding_Exercise (Adam's team)", "BECU_Technical_Coding_Exercise (Adam's team)\BECU_Technical_Coding_Exercise (Adam's team).csproj", "{A39FFBE7-2D6B-457A-85D1-2666BB1F0D62}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "reactproject2", "reactproject2\reactproject2.esproj", "{257021A2-905D-4E06-99D5-479D13F7DCD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{A39FFBE7-2D6B-457A-85D1-2666BB1F0D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A39FFBE7-2D6B-457A-85D1-2666BB1F0D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A39FFBE7-2D6B-457A-85D1-2666BB1F0D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{257021A2-905D-4E06-99D5-479D13F7DCD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257021A2-905D-4E06-99D5-479D13F7DCD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257021A2-905D-4E06-99D5-479D13F7DCD1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{257021A2-905D-4E06-99D5-479D13F7DCD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257021A2-905D-4E06-99D5-479D13F7DCD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{257021A2-905D-4E06-99D5-479D13F7DCD1}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
