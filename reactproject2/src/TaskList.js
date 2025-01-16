@@ -1,9 +1,13 @@
+// src/TaskList.js
 import React from 'react';
+import TaskItem from './TaskItem';
 
-function ReactComponent() {
-  return (
-    <p>Hello world!</p>
-  );
-}
+const TaskList = ({ tasks, toggleTaskStatus }) => (
+    <ul>
+        {tasks.map(task => (
+            <TaskItem key={task.id} task={task} toggleTaskStatus={toggleTaskStatus} />
+        ))}
+    </ul>
+);
 
-export default ReactComponent;
+export default TaskList;
