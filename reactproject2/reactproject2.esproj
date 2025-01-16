@@ -1,13 +1,47 @@
 <Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.45-alpha">
   <PropertyGroup>
     <StartupCommand>set BROWSER=none&amp;&amp;npm start</StartupCommand>
-  <JavaScriptTestRoot>src\</JavaScriptTestRoot>
+    <JavaScriptTestRoot>src\</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
     <!-- Command to run on project build -->
-    <BuildCommand></BuildCommand>
+    <BuildCommand>
+    </BuildCommand>
     <!-- Command to create an optimized build of the project that's ready for publishing -->
     <ProductionBuildCommand>npm run build</ProductionBuildCommand>
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\build</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove="src\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\TaskList.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\setupTests.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\reportWebVitals.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\logo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\index.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\App.test.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\App.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\App.css" />
+  </ItemGroup>
 </Project>
