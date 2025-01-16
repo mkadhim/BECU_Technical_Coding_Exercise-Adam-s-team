@@ -12,6 +12,9 @@
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
     <RootNamespace>react_api</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
+
+
+
   </PropertyGroup>
 
   <ItemGroup>
