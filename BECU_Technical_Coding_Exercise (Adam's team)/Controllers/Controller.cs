@@ -1,28 +1,40 @@
 using BECU_Technical_Coding_Exercise__Adam_s_team_;
+
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("api/[controller]")]
 public class TasksController : ControllerBase
 {
-    private static List<TaskItem> tasks = new List<TaskItem>
+    private static List<TaskItem> Tasks = new List<TaskItem>
     {
-        new TaskItem { Id = 1, Name = "Sample Task", Completed = false }
+        new TaskItem { Id = 1, Name = "Buy groceries", Status = "pending" },
+        new TaskItem { Id = 2, Name = "Complete project", Status = "completed" },
+        new TaskItem { Id = 3, Name = "Pay bills", Status = "pending" }
     };
 
     [HttpGet]
-    public ActionResult<IEnumerable<TaskItem>> GetTasks()
+    public IActionResult GetTasks()
     {
-        return Ok(tasks);
+        return Ok(Tasks);
     }
 
     [HttpPut("{id}")]
-    public ActionResult UpdateTask(int id)
+    public IActionResult UpdateTaskStatus(int id, [FromBody] TaskItem updatedTask)
     {
-        var task = tasks.FirstOrDefault(t => t.Id == id);
+        var task = Tasks.FirstOrDefault(t => t.Id == id);
         if (task == null) return NotFound();
 
-        task.Completed = !task.Completed;
+        task.Status = updatedTask.Status;
         return NoContent();
     }
 }
+
+public class TaskItem
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Status { get; set; }
+}
+
+
